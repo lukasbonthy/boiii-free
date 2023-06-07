@@ -139,6 +139,7 @@ namespace server_list
 	bool get_master_server(game::netadr_t& address)
 	{
 		address = network::address_from_string("api.raidmax.org:5000");
+		address = network::address_from_string("master.awog.at:20810");
 		return address.type != game::NA_BAD;
 	}
 
